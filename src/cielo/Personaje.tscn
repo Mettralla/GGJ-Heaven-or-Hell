@@ -1,0 +1,56 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://imagenes/Player/Angel Wing/Wing Angel 7.png" type="Texture" id=1]
+[ext_resource path="res://imagenes/Player/Angel Wing/Wing Angel 3.png" type="Texture" id=2]
+[ext_resource path="res://imagenes/Player/Angel Wing/Wing Angel 2.png" type="Texture" id=3]
+[ext_resource path="res://imagenes/Player/Angel Wing/Wing Angel 5.png" type="Texture" id=4]
+[ext_resource path="res://imagenes/Player/Angel Wing/Wing Angel 8.png" type="Texture" id=5]
+[ext_resource path="res://imagenes/Player/Angel Wing/Wing Angel 9.png" type="Texture" id=6]
+[ext_resource path="res://imagenes/Player/Angel Wing/Wing Angel 1.png" type="Texture" id=7]
+[ext_resource path="res://imagenes/Player/Angel Wing/Wing Angel 4.png" type="Texture" id=8]
+[ext_resource path="res://imagenes/Player/Angel Wing/Wing Angel 6.png" type="Texture" id=9]
+[ext_resource path="res://Personaje.gd" type="Script" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 1 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "volar",
+"speed": 4.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 55.7853
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 61.1882
+
+[node name="KinematicBody2D" type="KinematicBody2D" groups=["Player"]]
+collision_layer = 3
+script = ExtResource( 10 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -1.19209e-07, 1 )
+scale = Vector2( 3.45313, 3.07813 )
+frames = SubResource( 1 )
+animation = "volar"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="." groups=["Player"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 3 )
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+margin_left = -196.0
+margin_top = 255.0
+margin_right = 194.0
+margin_bottom = 309.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
