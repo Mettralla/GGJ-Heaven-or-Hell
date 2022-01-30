@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://imagenes/plataforma/cielo.png" type="Texture" id=1]
 [ext_resource path="res://imagenes/plataforma/mitad.png" type="Texture" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://Pajaro.tscn" type="PackedScene" id=13]
 [ext_resource path="res://imagenes/ending/2022-01-30_03_15_54-PaintTool_SAI_Ver.2_64bit_Preview.2020.04.10_-_Nueva_carpeta___godpalace.sai2.png" type="Texture" id=14]
 [ext_resource path="res://scene/Portal.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Sonidos/Soundtrack/02-In The Heaven_.wav" type="AudioStream" id=16]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 32, 0, 32, 0, 0, 64, 0 )
@@ -334,3 +335,7 @@ position = Vector2( 8082, -46 )
 
 [node name="Portal" parent="." instance=ExtResource( 15 )]
 position = Vector2( 18997, 306 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+autoplay = true
