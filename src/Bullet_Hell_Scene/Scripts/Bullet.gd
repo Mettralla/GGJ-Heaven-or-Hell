@@ -3,7 +3,7 @@ extends Node2D
 var dir= Vector2(1, 0)
 
 var Sound = load("res://Sound1.mp3")
-var bullet_speed = 600
+var bullet_speed = 400
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,12 +17,16 @@ func _process(delta):
 #	var sound = AudioStreamPlayer.new()
 #	sound.stream = Sound
 	
-	if ($RayCast2D.is_colliding()):
-		print("hit!")
+#	if ($Area2D/CollisionShape2D.is_in_group(is_in_group("Player")):
+#		print("hit!")
+
+
+
+#		$Control/ProgressBar.value -= 1
 	
 
 #		sound.play()
-#		add_child(sound)
+ #get_parent().add_child()$Control/ProgressBar
 
 	#self.position.x += 1
 	#La parte de arriba hace que rote mas y haga un buen efecto
@@ -31,3 +35,7 @@ func _process(delta):
 func screen_exited():
 	queue_free()
 
+
+
+func area_entered(area):
+	pass # Replace with function body.

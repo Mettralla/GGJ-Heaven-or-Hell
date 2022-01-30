@@ -16,6 +16,6 @@ func _ready():
 #	pass
 
 
-func PlayerFinished():
-	get_tree().change_scene("res://Scenes/Stage_4/Stage_4.tscn")
-	pass # Replace with function body.
+#func PlayerFinished():
+#	get_tree().change_scene("res://Scenes/Stage_4/Stage_4.tscn")
+#	pass # Replace with function body.

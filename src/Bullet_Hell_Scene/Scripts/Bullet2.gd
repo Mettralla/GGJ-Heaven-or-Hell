@@ -18,8 +18,8 @@ func _physics_process(delta):
 #	var sound = AudioStreamPlayer.new()
 #	sound.stream = Sound
 	
-	if ($RayCast2D.is_colliding()):
-		print("hit!")
+#	if ($RayCast2D.is_colliding()):
+#		print("hit!")
 	
 
 #		sound.play()
@@ -32,3 +32,7 @@ func _physics_process(delta):
 func screen_exited():
 	queue_free()
 
+
+
+func _on_Area2D_area_entered(area):
+	pass # Replace with function body.
