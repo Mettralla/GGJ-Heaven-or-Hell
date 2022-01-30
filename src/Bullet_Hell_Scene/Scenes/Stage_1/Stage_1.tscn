@@ -1,0 +1,78 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Nada.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Stage_1.gd" type="Script" id=3]
+[ext_resource path="res://In the Bullet.wav" type="AudioStream" id=4]
+[ext_resource path="res://Backgrounds/inf2para1.png" type="Texture" id=5]
+[ext_resource path="res://Sonidos/Character Sounds/Abaddon Sounds/Abaddon Sound.wav" type="AudioStream" id=6]
+[ext_resource path="res://Sonidos/Character Sounds/Beelzebub Sounds/Beelzebub Sound.wav" type="AudioStream" id=7]
+[ext_resource path="res://Sprites/diablillo1.png" type="Texture" id=8]
+
+[node name="Stage_1" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Inf2Para1" type="Sprite" parent="."]
+position = Vector2( 960, 540 )
+texture = ExtResource( 5 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 965, 509 )
+
+[node name="Enemy_SP1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 124, 111 )
+
+[node name="AbaddonSound" type="AudioStreamPlayer" parent="Enemy_SP1"]
+stream = ExtResource( 6 )
+autoplay = true
+
+[node name="Enemy_SP2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1782, 97 )
+
+[node name="AbaddonSound" type="AudioStreamPlayer" parent="Enemy_SP2"]
+stream = ExtResource( 6 )
+autoplay = true
+
+[node name="Enemy_SP3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1794, 974 )
+
+[node name="BeelzebubSound" type="AudioStreamPlayer" parent="Enemy_SP3"]
+stream = ExtResource( 7 )
+autoplay = true
+
+[node name="Enemy_SP4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 134, 972 )
+
+[node name="BeelzebubSound" type="AudioStreamPlayer" parent="Enemy_SP4"]
+stream = ExtResource( 7 )
+autoplay = true
+
+[node name="BackgroundSong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 103.404, 103.121 )
+rotation = -2.08567
+scale = Vector2( 0.490136, 0.488143 )
+texture = ExtResource( 8 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 1781, 83 )
+rotation = -0.74002
+scale = Vector2( 0.457746, 0.494264 )
+texture = ExtResource( 8 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 122, 989 )
+rotation = -3.12065
+scale = Vector2( 0.490136, 0.488143 )
+texture = ExtResource( 8 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( 1812, 975 )
+rotation = -5.33896
+scale = Vector2( 0.490136, 0.488143 )
+texture = ExtResource( 8 )
+
+[connection signal="finished" from="BackgroundSong" to="." method="PlayerFinished"]

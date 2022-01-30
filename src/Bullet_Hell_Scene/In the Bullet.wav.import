@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/In the Bullet.wav-38331a1959fe3b72db5778054f50d777.sample"
+
+[deps]
+
+source_file="res://In the Bullet.wav"
+dest_files=[ "res://.import/In the Bullet.wav-38331a1959fe3b72db5778054f50d777.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
