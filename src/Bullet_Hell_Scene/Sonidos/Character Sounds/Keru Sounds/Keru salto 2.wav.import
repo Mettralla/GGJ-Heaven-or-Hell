@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Keru salto 2.wav-ddb29bd37777a5619dbc16d7a3ba3430.sample"
+
+[deps]
+
+source_file="res://Sonidos/Character Sounds/Keru Sounds/Keru salto 2.wav"
+dest_files=[ "res://.import/Keru salto 2.wav-ddb29bd37777a5619dbc16d7a3ba3430.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

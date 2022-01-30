@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Balas Lucius.wav-514c2d805649cf64978bdd6c6ca992ee.sample"
+
+[deps]
+
+source_file="res://Sonidos/Objets Sounds/Balas/Balas Lucius.wav"
+dest_files=[ "res://.import/Balas Lucius.wav-514c2d805649cf64978bdd6c6ca992ee.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
