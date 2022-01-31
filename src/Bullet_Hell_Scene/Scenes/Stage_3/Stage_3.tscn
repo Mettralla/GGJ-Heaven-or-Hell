@@ -30,15 +30,19 @@ autoplay = true
 
 [node name="Enemy_Spiral" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1818, 981 )
+scale = Vector2( 1, 1 )
 
 [node name="Enemy_Spiral2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1820, 94 )
+scale = Vector2( 1, 1 )
 
 [node name="Enemy_Spiral3" parent="." instance=ExtResource( 6 )]
 position = Vector2( 81.0001, 1009 )
+scale = Vector2( 1, 1 )
 
 [node name="Enemy_Spiral4" parent="." instance=ExtResource( 6 )]
 position = Vector2( 104, 86 )
+scale = Vector2( 1, 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 936, 66 )
