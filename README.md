@@ -50,7 +50,7 @@ Nuestro equipo aplico la tematica en la jugabilidad mientras en la zona de plata
  - Beimax (Daru) : Programador-Tester-Super Hacker // [Github](https://github.com/MaximoGaelLopez)
  - Krukoft : Programador-Tester // [Github](https://github.com/Krukoft)
  - AnSu : Animación-ilustración // [Github](https://github.com/AnSu36)
- - Mettralla : Diseño Gráfico-Manager //    [Github](https://github.com/Mettralla) / [Instagram](https://www.instagram.com/mettralla_/)
+ - Mettralla : Diseño Gráfico-Manager //    [Github](https://github.com/Mettralla) 
  - RichardWR : Diseño gráfico-Ilustración-Animación // [Github](https://github.com/RechardWR)
  - AnDribia : Sonido-Música-Producción // [Github](https://github.com/AugustoArancibia)
 
