@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/03-In The Hell_.wav-828d6bc721902a12bb430596893532f0.sample"
+
+[deps]
+
+source_file="res://Sonidos/Soundtrack/03-In The Hell_.wav"
+dest_files=[ "res://.import/03-In The Hell_.wav-828d6bc721902a12bb430596893532f0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
