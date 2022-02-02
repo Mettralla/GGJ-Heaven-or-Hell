@@ -1,0 +1,51 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://imagenes/tornado/3.png" type="Texture" id=1]
+[ext_resource path="res://imagenes/tornado/10.png" type="Texture" id=2]
+[ext_resource path="res://imagenes/tornado/5.png" type="Texture" id=3]
+[ext_resource path="res://imagenes/tornado/11.png" type="Texture" id=4]
+[ext_resource path="res://imagenes/tornado/9.png" type="Texture" id=5]
+[ext_resource path="res://imagenes/tornado/4.png" type="Texture" id=6]
+[ext_resource path="res://imagenes/tornado/7.png" type="Texture" id=7]
+[ext_resource path="res://imagenes/tornado/6.png" type="Texture" id=8]
+[ext_resource path="res://imagenes/tornado/8.png" type="Texture" id=9]
+[ext_resource path="res://script/Sky/Tornado2.gd" type="Script" id=10]
+
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 509.5 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 6 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "tornado",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 74, 772 )
+
+[node name="Node2D" type="KinematicBody2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource( 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 18.5 )
+shape = SubResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.559074, 1.4901 )
+frames = SubResource( 1 )
+animation = "tornado"
+frame = 6
+playing = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 64, -4 )
+shape = SubResource( 3 )
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
