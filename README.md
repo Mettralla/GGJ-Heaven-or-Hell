@@ -37,7 +37,7 @@ Nuestro equipo aplico la tematica en la jugabilidad mientras en la zona de plata
 
 ### Diversificadores
 
-[Diversificadores del GGJ 2022](https://globalgamejam.org/news/ggj-2022-diversifiers])
+[Diversificadores del GGJ 2022](https://globalgamejam.org/news/ggj-2022-diversifiers)
 
 - Recopilación: Sube cualquier canción que hagas para tu juego y compartela bajo una licencia Creative Commons para que otros la puedan usar este año ¡o en la Global Game Jam 2023! 
 - Tómate un respiro: Cada miembro del equipo tiene que tomar un descanso cada 2-3 horas.
