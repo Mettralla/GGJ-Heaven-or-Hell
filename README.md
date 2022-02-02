@@ -1,9 +1,9 @@
 # Heaven or Hell
  Juego desarrollado para la Global Game Jam 2022
  
- ![Game Screenshot](https://github.com/Mettralla/GGJ-Heaven-or-Hell/blob/main/README1.jpg)
- ![Game Screenshot](https://github.com/Mettralla/GGJ-Heaven-or-Hell/blob/main/README2.jpg)
- ![Game Screenshot](https://github.com/Mettralla/GGJ-Heaven-or-Hell/blob/main/README3.jpg)
+ ![Game Screenshot](https://github.com/Mettralla/GGJ-Heaven-or-Hell/blob/main/README1.png)
+ ![Game Screenshot](https://github.com/Mettralla/GGJ-Heaven-or-Hell/blob/main/README2.png)
+ ![Game Screenshot](https://github.com/Mettralla/GGJ-Heaven-or-Hell/blob/main/README3.png)
  
  Heaven or Hell es un juego que sigue a nuestro pequeño protagonista Keru, que busca llegar a su destino 
  debiendo atravesar cielo e infierno para ello. Los jugadores deberan atravesar niveles de plataformas y 
